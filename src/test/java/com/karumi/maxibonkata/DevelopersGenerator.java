@@ -29,7 +29,7 @@ public class DevelopersGenerator extends Generator<Developer> {
 
   @Override public Developer generate(SourceOfRandomness random, GenerationStatus status) {
     String name = RandomStringUtils.randomAlphabetic(random.nextInt(16));
-    int numberOfMaxibons = random.nextInt(0, Integer.MAX_VALUE);
+    int numberOfMaxibons = random.nextInt(0, 100);
     return new Developer(name, numberOfMaxibons);
   }
 }
